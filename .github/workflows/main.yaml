@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@40901a3bceb045a3b1bcf168fceffbaba762b3b1
       - name: ls $GITHUB_WORKSPACE
         run: "ls -la $GITHUB_WORKSPACE"
       - name: ls
